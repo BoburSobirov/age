@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <h1 class="heading1">Enter a number</h1>
+
+        
+        <form class="bs-form" >   
+            <input type="number" placeholder="type number">   
+        </form>
+
+        <p class="basis"></p>
+        
+    </div>
+
+
+    <script>
+
+let elForm = document.querySelector(".bs-form");
+let presentday = document.querySelector("input")
+let elResult = document.querySelector(".basis");
+
+let present = 2022;
+
+elForm.addEventListener("submit",function(evt) {
+   evt.preventDefault();
+   
+   let elInput = presentday.value;
+
+   let age = (present - elInput)
+   
+   elResult.textContent = `Sizning yoshingiz ${age} da`
+
+   
+   if(elInput <= 0){
+   
+      elResult.textContent = "Iltimos (0 dan) katta son kiriting!";
+   
+      console.log(elResult);
+   
+   }
+   elForm.reset()
+})
+
+
+
+
+
+    </script>
+</body>
+</html>

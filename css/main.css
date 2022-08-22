@@ -1,0 +1,56 @@
+/* aldrich-regular - latin */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lobster', cursive;
+  background-image: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700340606.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin: 0 auto; */
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column ;
+  outline: none;
+}
+
+.container {
+  padding: 14% 0;
+  gap: 10%;
+  background: none;
+  filter: drop-shadow(90%);
+}
+
+.heading1 {
+  background: none;
+  font-size: 3rem;
+}
+
+.bs-form {
+  margin-top: 3%;
+  background: none;
+}
+
+.basis {
+  margin-top: 20px;
+  font-size: 2rem;
+  background: none;
+}
+
+input {
+  width: 450px;
+  height: 50px;
+  font-size: 18px;
+  background-color: #FFFFFF;
+  border: 2px solid #ff7700;
+  border-radius: 0 0 41px 41px;
+}
+input:hover {
+  z-index: 10;
+  transition: 0.5s;
+  animation: cubic-bezier();
+  box-shadow: 0 0 31px #ff7700;
+  border-radius: 41px 41px 0 0 ;
+}
